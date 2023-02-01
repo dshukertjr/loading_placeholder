@@ -1,7 +1,6 @@
 name: loading_placeholder
 description: Displays a loading placeholder where the shares of grey is animated.
-version: 0.0.1
-author: Tyler Shukert <dshukertjr@gmail.com>
+version: 0.0.2
 homepage: https://github.com/dshukertjr/loading_placeholder
 
 environment:

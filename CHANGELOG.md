@@ -1,3 +1,6 @@
-## [0.0.1] - TODO: Add release date.
+## [v0.0.2] - auto release
 
-* TODO: Describe initial release.
+* testing auto release
+## [v0.0.1] - initial release
+
+* initial release
