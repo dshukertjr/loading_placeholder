@@ -10,7 +10,7 @@ class LoadingPlaceholder extends StatefulWidget {
   final List<Color> colors;
 
   const LoadingPlaceholder({
-    Key key,
+    required Key key,
     this.frequency = const Duration(milliseconds: 800),
     this.colors = const [Color(0xFFF6F7F8), Color(0xFFEEEEEE)],
   }) : super(key: key);
@@ -19,10 +19,10 @@ class LoadingPlaceholder extends StatefulWidget {
 }
 
 class _LoadingPlaceholderState extends State<LoadingPlaceholder> {
-  Duration duration;
-  Color color1;
-  Color color2;
-  Color currentColor;
+  late final Duration duration;
+  late final Color color1;
+  late final Color color2;
+  late final Color currentColor;
 
   @override
   Widget build(BuildContext context) {
@@ -34,12 +34,10 @@ class _LoadingPlaceholderState extends State<LoadingPlaceholder> {
 
   @override
   void initState() {
-    duration = widget.frequency ?? Duration(milliseconds: 800);
+    duration = widget.frequency;
     color1 =
-        widget.colors?.isEmpty == false ? widget.colors[0] : Color(0xFFF6F7F8);
-    color2 = (widget.colors?.length ?? 0) >= 2
-        ? widget.colors[1]
-        : Color(0xFFEEEEEE);
+        widget.colors.isEmpty == false ? widget.colors[0] : Color(0xFFF6F7F8);
+    color2 = (widget.colors.length) >= 2 ? widget.colors[1] : Color(0xFFEEEEEE);
     currentColor = color1;
     _alternateColors();
     super.initState();

@@ -1,10 +1,10 @@
 name: loading_placeholder
 description: Displays a loading placeholder where the shares of grey is animated.
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/dshukertjr/loading_placeholder
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.18.0 <3.0.0"
 
 dependencies:
   flutter:
